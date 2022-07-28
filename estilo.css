@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Rum Raisin', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(126, 129, 217, 1) 62%, rgba(0, 212, 255, 1) 100%);
+}
+
+#pri-botao {
+    background: #007BFF;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
+#pri-botao:hover {
+    opacity: 0.8;
+}
+
+#pri-botao:active {
+    opacity: 0.5;
+}
+
+.conteiner {
+    background: #ADD8E6;
+    width: 541px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+
+}
+
+#inputt {
+    width: 300px;
+    height: 31px;
+    border: 2px solid #a9a9a9;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#inputt::placeholder {
+    padding: 10px;
+}
+
+#tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.tare {
+    border-radius: 5px;
+    box-shadow: 2px;
+    box-shadow: 1px 4px 10px #000000;
+    padding: 5px 15px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.paragrafo {
+    color: black;
+    margin-left: 25px;
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.delete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.bxs-trash {
+    color: red;
+}
+
+.foguete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.bxs-rocket {
+    color: #00008B;
+}
+
+.tare:hover .delete {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.tare:hover .foguete {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.fgt {
+    background: #00FA9A;
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 545px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+
+    body {
+        background: cover;
+    }
+
+    .conteiner {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 10px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+
+    }
+
+    #inputt {
+        width: 280px;
+        margin-bottom: 15px;
+        height: 28px;
+        border: 2px solid #a9a9a9;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    #pri-botao {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    #tarefas {
+        width: 100%;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    .tare {
+        border-radius: 8px;
+        box-shadow: 1px;
+        box-shadow: 1px 4px 10px #000000;
+        padding: 5px 15px;
+        position: relative;
+        margin-top: 15px;
+        height: 50px;
+    }
+
+    .delete {
+        opacity: 3;
+    }
+
+    .foguete {
+        opacity: 3;
+    }
+
+}
